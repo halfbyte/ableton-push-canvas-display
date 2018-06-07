@@ -1,10 +1,11 @@
 {
-  "name": "ableton-push-canvas-display",
+  "name": "@halfbyte/ableton-push-canvas-display",
   "version": "1.0.0",
   "description": "send contents of a canvas 2d context to the Ableton Push 2 display",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "example": "node examples/simple-anim.js"
   },
   "repository": {
     "type": "git",

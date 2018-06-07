@@ -37,10 +37,10 @@ function convertImage(image, frame) {
   }
 }
 /* this is thi actual device init */
-function _init(push) {
-  if (push == null) { return; }
-  push.open()
-  const pushInterface = push.interface(0)
+function _init(device) {
+  if (device == null) { return; }
+  device.open()
+  const pushInterface = device.interface(0)
   pushInterface.claim()
   endpoint = pushInterface.endpoint(1)
 }

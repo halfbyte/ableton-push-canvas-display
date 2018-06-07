@@ -56,3 +56,18 @@ This needs tests (sort of hard to test without actual hardware, but I guess I co
 the conversion process properly).
 
 It is not handling multiple push devices. Not sure that this is actually a valid usecase for me.
+
+## Contributions
+
+...are welcome. Fork the project, open up a PR, yadda yadda.
+
+## Credits
+
+This uses Tessel's node-usb library and Automattic's libcairo based canvas implementation for the
+example.
+
+This library is inspired by an awesome weekend at JSConfEU 2019, and especially by my time spent with the
+wonderful people at [live:js](http://livejs.network).
+
+Also, thank you so much, Ableton for [being very open with Push 2 and documenting almost everything
+about this](https://github.com/Ableton/push-interface) awesome hardware.

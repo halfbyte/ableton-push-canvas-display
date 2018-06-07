@@ -1,3 +1,4 @@
+const USB = require('usb')
 const Canvas = require('canvas')
 const path = require('path')
 const { initPush, sendFrame } = require(path.join(__dirname, '..', 'index.js'))
@@ -27,13 +28,16 @@ let frameNum = 0
 function nextFrame() {
   drawFrame(ctx, frameNum)
   frameNum++
-  sendFrame(ctx, function() {
-    process.nextTick(function() {
-      nextFrame()
-    })
+  sendFrame(ctx, function(error) {
+    // we can ignore any error here, more or less
+    setTimeout(nextFrame,10) // Do not use nextTick here, as this will not allow USB callbacks to fire.
   })
 }
 
-initPush(function() {
+initPush(function(error) {
+  if (error) {
+    console.log(error)
+  }
+  // It's ok to continue, as a Push 2 device may appear later
   nextFrame()
 })
