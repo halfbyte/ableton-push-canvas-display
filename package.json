@@ -1,0 +1,33 @@
+{
+  "name": "ableton-push-canvas-display",
+  "version": "1.0.0",
+  "description": "send contents of a canvas 2d context to the Ableton Push 2 display",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/halfbyte/ableton-push-canvas-display.git"
+  },
+  "engines": {
+    "nodejs": ">=8.0.0"
+  },
+  "keywords": [
+    "music",
+    "hardware",
+    "usb"
+  ],
+  "author": "Jan Krutisch <jan@krutisch.de>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/halfbyte/ableton-push-canvas-display/issues"
+  },
+  "homepage": "https://github.com/halfbyte/ableton-push-canvas-display#readme",
+  "dependencies": {
+    "usb": "^1.3.1"
+  },
+  "devDependencies": {
+    "canvas": "^1.6.11"
+  }
+}
