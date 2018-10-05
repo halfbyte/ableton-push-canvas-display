@@ -65,9 +65,10 @@ function initPush(callback) {
   })
   if (push == null) {
     callback(new Error("Push not found"))
+  } else {
+    _init(push)
+    callback()
   }
-  _init(push)
-  callback()
 }
 
 /**
