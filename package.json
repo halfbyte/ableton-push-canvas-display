@@ -1,6 +1,6 @@
 {
   "name": "ableton-push-canvas-display",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "send contents of a canvas 2d context to the Ableton Push 2 display",
   "main": "index.js",
   "scripts": {
